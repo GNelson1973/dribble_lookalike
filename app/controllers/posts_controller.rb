@@ -7,6 +7,7 @@ before_action :authenticate_user!, except: [:index, :show]
   end
 
   def show
+    @comments = Comment.where(post_id: @post)
   end
 
   def new
@@ -47,7 +48,7 @@ def find_post
 end
 
 def post_params
-  params.require(:post).permit(:title, :link, :description)
+  params.require(:post).permit(:title, :link, :description, :image)
 end
 
 end

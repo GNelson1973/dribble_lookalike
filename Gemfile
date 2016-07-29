@@ -50,3 +50,4 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.2'
 gem 'carrierwave', '~> 0.11.2'
 gem 'acts_as_votable', '~> 0.10.0'
+gem "font-awesome-rails"
